@@ -1,22 +1,5 @@
 <h1>{{title}}</h1>
-
-<div *ngIf="selectedHero">
-    <h2>{{selectedHero.name}} details!</h2>
-    <div><label>id: {{selectedHero.id}}</label></div>
-
-    <div>
-        <label for="name">name:</label>
-        <input type="text" [(ngModel)]='selectedHero.name' name="name" placeholder="name" id="name">
-    </div>
-
-</div>
-<ul class="heroes">
-    <li *ngFor='let hero of heroes' [class.selected]='hero === selectedHero' (click)='onSelect(hero)'>
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </li>
-</ul>
-
-
+<app-heroes></app-heroes>
 <p>
     ng 里的结构型指令都是有*打头的 [class.selected] ='true' 就可以设置css
 

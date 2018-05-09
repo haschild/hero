@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import {HeroesComponent} from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import {HeroService} from './hero-service';
+import { MessageComponent } from './message/message.component';
 @NgModule({
   declarations: [  // 组件、指令、管道
     AppComponent,
     HeroDetailComponent,
-    HeroesComponent
+   ,
+    MessageComponent HeroesComponent
   ],
   imports: [  // 导入公共的模块
     BrowserModule,

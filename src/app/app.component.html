@@ -1,6 +1,9 @@
-<h1>{{title}}</h1>
-<app-heroes></app-heroes>
-<p>
-    ng 里的结构型指令都是有*打头的 [class.selected] ='true' 就可以设置css
-
-</p>
+<h1>
+    {{title}}</h1>
+<nav>
+    <a routerLink="/heroes">Heroes</a>
+    <a routerLink="/dashboard">dashboard</a>
+</nav>
+<!-- router-outlet 路由占位符，应该只有一个 -->
+<router-outlet></router-outlet>
+<app-message></app-message>

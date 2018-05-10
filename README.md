@@ -19,8 +19,13 @@
         ],
    // 注意bootstrap这里加了版本号
    ```
-
-
+* @Injectable 注解的服务
+    1. 服务是可以缓存数据的，一个服务是可以更改另一个服务保存的值
+    2. 在 construction 中声明服务，如果是 public 类型可以直接被 HTML 引用值
+* 在 ts 文件中声明外部常量 const 可以直接在 import 下 声明。
+* 在使用 routerLink注意
+    1.  最好是在路径前 + ‘/’，eg：routerLink='/detail'。如果是在根目录下，可以默认匹配，有路由嵌套的时候就访问不到。
+* string to number :js 中 +string = number 这个我还真没注意到。    
 #### 知识点介绍
 
 * 结构型指令：这些指令都是运用在 HTML 页面中，并且都带 “*” 因为要更改页面结构；用驼峰法书写；两个结构型指令不能同时作用一个 HTML 元素不然 angular 不知道采用哪个指令。

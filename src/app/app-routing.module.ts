@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'heroes', component: HeroesComponent },
   { path: 'dashboard', component: DashboardComponent },
 
-  // :id 是一个占位符，用来接收参数
+  //   :id 是一个占位符，用来接收参数
   { path: 'detail/:id', component: HeroDetailComponent }
 
 

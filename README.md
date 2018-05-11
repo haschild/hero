@@ -25,7 +25,11 @@
 * 在 ts 文件中声明外部常量 const 可以直接在 import 下 声明。
 * 在使用 routerLink注意
 1.  最好是在路径前 + ‘/’，eg：routerLink='/detail'。如果是在根目录下，可以默认匹配，有路由嵌套的时候就访问不到。
+
 * string to number :js 中 +string = number 这个我还真没注意到。    
+* npm clean : 可以刷新 \mode_modules\里的包
+* 出错 ERROR in Error:Metadata version mismatch for module,found version 4, expected 3
+1. 第一感觉就是傻眼，昨天代码都是好好的，今天就出现问题了。上网查看了下，[参考操作](http://www.yayihouse.com/yayishuwu/chapter/1049)结果也没办法。尝试执行 git stash ——> git stash pop 。因为代码我仅仅是在本地更改过,并没有git add, 之后就解决了。
 #### 知识点介绍
 
 * 结构型指令：这些指令都是运用在 HTML 页面中，并且都带 “*” 因为要更改页面结构；用驼峰法书写；两个结构型指令不能同时作用一个 HTML 元素不然 angular 不知道采用哪个指令。
@@ -36,6 +40,15 @@
 
 * 事件绑定
 1. ():  里面也可以写自定义的事件名称。
+
+* 异步数据获取用 Observable
+* angular 模拟数据
+1. 会用到内存 Web API（In-memory Web API）
+    1. npm install angular-in-memory-web-api --save   安装
+    2. 导入类： 
+    import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+    import { InMemoryDataService }  from './in-memory-data.service';
+2. HttpClient 发送请求
 
 
 

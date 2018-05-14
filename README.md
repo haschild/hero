@@ -60,6 +60,8 @@
 * 所有的 HttpClient 方法都会返回某个值的 RxJS Observable。
 * 通常，Observable 可以在一段时间内返回多个值。 但来自 HttpClient 的 Observable 总是发出一个值，然后结束，再也不会发出其它值。
 
+#### http 错误处理
+* 使用 RxJS 的 catchError() 操作符来建立对 Observable 结果的处理管道（pipe）。
 
 #### 谨记
 * 下载的依赖包也不要太新，出现莫名奇妙的错误。

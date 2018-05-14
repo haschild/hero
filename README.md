@@ -69,6 +69,7 @@
 
 #### 谨记
 * 下载的依赖包也不要太新，出现莫名奇妙的错误。
+* git merge [branchname] 之后需要 git push 下。不然代码是不会上传到 origin
 
 
 

@@ -55,6 +55,11 @@
 2. HttpClient 发送请求
 
 
+#### http 请求数据
+* HttpClient.get 默认情况下把响应体当做无类型的 JSON 对象进行返回。
+* 所有的 HttpClient 方法都会返回某个值的 RxJS Observable。
+* 通常，Observable 可以在一段时间内返回多个值。 但来自 HttpClient 的 Observable 总是发出一个值，然后结束，再也不会发出其它值。
+
 
 #### 谨记
 * 下载的依赖包也不要太新，出现莫名奇妙的错误。

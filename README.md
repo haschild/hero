@@ -57,7 +57,8 @@
     import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
     import { InMemoryDataService }  from './in-memory-data.service';
 2. HttpClient 发送请求
-
+* NgModule 
+    1. 那些属于这个 NgModule 的组件会共享同一个编译上下文环境。可以知道变量共享的作用域
 
 #### http 请求数据
 * HttpClient.get 默认情况下把响应体当做无类型的 JSON 对象进行返回。

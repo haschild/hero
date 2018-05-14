@@ -30,6 +30,10 @@
 * npm clean : 可以刷新 \mode_modules\里的包
 * 出错 ERROR in Error:Metadata version mismatch for module,found version 4, expected 3
 1. 第一感觉就是傻眼，昨天代码都是好好的，今天就出现问题了。上网查看了下，[参考操作](http://www.yayihouse.com/yayishuwu/chapter/1049)结果也没办法。尝试执行 git stash ——> git stash pop 。因为代码我仅仅是在本地更改过,并没有git add, 之后就解决了。
+2. 更改它提示解析失败的文件（增加空格）
+* 使用 npm 下载依赖包
+1. 下载最新的包 eg: cnpm install bootstrap
+2. 下载特定版本的包 eg: cnpm install bootstrap@3 (3版本最新包)  或 cnpm install bootstrap@3.1.1
 #### 知识点介绍
 
 * 结构型指令：这些指令都是运用在 HTML 页面中，并且都带 “*” 因为要更改页面结构；用驼峰法书写；两个结构型指令不能同时作用一个 HTML 元素不然 angular 不知道采用哪个指令。
@@ -49,6 +53,11 @@
     import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
     import { InMemoryDataService }  from './in-memory-data.service';
 2. HttpClient 发送请求
+
+
+
+#### 谨记
+* 下载的依赖包也不要太新，出现莫名奇妙的错误。
 
 
 

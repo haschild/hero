@@ -17,7 +17,7 @@ export class HeroesComponent implements OnInit {
   // 1。当做HeroService的注入点，并且在构造函数实例化的时候，创建一个单例
   //2. 构造函数一般只是拿来初始化操作，参数赋值属性
   constructor(private heroService: HeroService) {
-    
+
    }
 
   ngOnInit() {
@@ -30,6 +30,10 @@ export class HeroesComponent implements OnInit {
   getSelect(): void {
     this.heroService.getHeroes()
     .subscribe(heroes1 => this.heroes = heroes1);
+  }
+  delete(hero: Hero): void {
+    this.heroes = this.heroes.filter(h => h !== hero);
+    this.heroService.deleteHero(hero).subscribe();
   }
 
 }

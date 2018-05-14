@@ -6,3 +6,18 @@
         </div>
     </a>
 </div>
+<h3>通过搜索获取值</h3>
+<div class="grid grid-pad">
+    <a *ngFor='let hero of heroes$ | async' class="col-1-4" routerLink='/detail/{{hero.id}}'>
+        <div class="module hero">
+            <h4>{{hero.name}}</h4>
+        </div>
+    </a>
+</div>
+
+
+<p>name$ 是一个命名的惯例用来表示获取的 Observable 的值</p>
+<p>async 表示是 angular 的 AsyncPipe，AsyncPipe 会自动订阅到 Observable，不用在组件里订阅了。</p>
+
+
+<app-hero-search></app-hero-search>

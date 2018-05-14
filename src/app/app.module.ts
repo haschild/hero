@@ -14,12 +14,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data-service';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 @NgModule({
   declarations: [ // 组件、指令、管道
     AppComponent,
     HeroDetailComponent,
     HeroesComponent,
     MessageComponent,
+    HeroSearchComponent,
     DashboardComponent
   ],
   imports: [  // 导入公共的模块

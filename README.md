@@ -34,6 +34,10 @@
 * 使用 npm 下载依赖包
 1. 下载最新的包 eg: cnpm install bootstrap
 2. 下载特定版本的包 eg: cnpm install bootstrap@3 (3版本最新包)  或 cnpm install bootstrap@3.1.1
+
+* typeScript => 函数的介绍
+1. () => {}  ：这是标准的模式，{} 里可以写多个执行语句
+2.  => 前后都没有的， 前面是参数，后面只能跟一个执行语句
 #### 知识点介绍
 
 * 结构型指令：这些指令都是运用在 HTML 页面中，并且都带 “*” 因为要更改页面结构；用驼峰法书写；两个结构型指令不能同时作用一个 HTML 元素不然 angular 不知道采用哪个指令。

@@ -3,7 +3,7 @@
 
 
 
-#### 不明确的地方
+#### 需要加强记忆的地方
 * package.json 属性 dependencies 和 devDependencies 导入依赖包的区别
 [参考博客](https://blog.csdn.net/feiying008/article/details/53033704) 这里有说明： dependencies 是项目运行必须的包，而 devDenpendencies 是项目开发环境会需要的包。你在dependencies 导入依赖就可以了。
 
@@ -175,6 +175,12 @@
 
 ```
 结合 this 可以获取类型中没有被声明过的成员
+
+
+
+#### 不明确的地方
+* 动态组件加载
+
 
 #### 插值表达式和属性绑定
 * 插值表达式和属性绑定都可以给 HTML 元素设置值。

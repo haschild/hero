@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data-service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HeroColorDirective } from './hero-color.directive';
+import { HeroDirectiveComponent } from './hero-directive/hero-directive.component';
 @NgModule({
   declarations: [ // 组件、指令、管道
     AppComponent,
@@ -22,7 +24,10 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroesComponent,
     MessageComponent,
     HeroSearchComponent,
-    DashboardComponent
+    HeroColorDirective,
+    HeroDetailComponent,
+    DashboardComponent,
+    HeroDirectiveComponent
   ],
   imports: [  // 导入公共的模块
     BrowserModule,

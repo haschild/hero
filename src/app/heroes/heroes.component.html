@@ -1,6 +1,6 @@
 <!-- <app-hero-detail></app-hero-detail> -->
 
-<h2>My Heroes</h2>
+<h4>My Heroes</h4>
 <ul class="heroes">
     <li *ngFor="let hero of heroes" routerLink='/detail/{{hero.id}}'>
         <span class="badge">{{hero.id}}</span> {{hero.name | uppercase}}

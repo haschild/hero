@@ -1,12 +1,18 @@
-<h1>
-    {{title}}</h1>
-<nav>
-    <a routerLink="/heroes">Heroes</a>
-    <a routerLink="/dashboard">dashboard</a>
-    <a routerLink="/setcolor">setcolor</a>
+<div class="container-fluid">
+    <div class="row">
+        <header class="col-md-12 header"> {{title}} </header>
+        <nav class="nav flex-column col-md-3">
+            <a class="nav-link active" routerLink="/heroes" href="#">Heroes</a>
+            <a class="nav-link " routerLink="/dashboard" href="#">dashboard</a>
+            <a class="nav-link " routerLink="/setcolor" href="#">setcolor</a>
+            <a class="nav-link " routerLink="/message" href="#">message</a>
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </nav>
+        <div class="col-md-9">
+            <router-outlet></router-outlet>
+        </div>
+        <footer class="col-md-12 text-center footer"></footer>
+    </div>
+</div>
 
-
-</nav>
 <!-- router-outlet 路由占位符，应该只有一个 -->
-<router-outlet></router-outlet>
-<app-message></app-message>

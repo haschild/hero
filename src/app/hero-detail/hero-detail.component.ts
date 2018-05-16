@@ -10,11 +10,11 @@ import { HEROES } from '../mock-heroes';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  hero: Hero;
+   hero: Hero;
   heroes: Hero[];
   constructor(
     private router: ActivatedRoute, // 保存着实例路由的信息，可以在路由中提取参数感兴趣。
-    private location: Location, //angular 和 浏览器有关系，可以实现后退功能
+    private location: Location, // angular 和 浏览器有关系，可以实现后退功能
     private heroService: HeroService
   ) { }
 
@@ -36,24 +36,12 @@ export class HeroDetailComponent implements OnInit {
     this.heroService.updateHero(this.hero)
       .subscribe(() => this.goBack());
   }
-  // catch click and add
-  add(name: string): void {
-    name = name.trim();
-    const id: number = Math.floor(Math.random() * 10);
-    if (!name) { return; }
-
-    // 会自动将id 的值增加
-    // this.heroService.addHero({ name: name, id: id} as Hero)
-    // as 在 typeScript 可以强制转换类型
-    this.heroService.addHero({ name } as Hero)
-      .subscribe((hero) => { this.heroes.unshift(hero); this.goBack();
-  });
+  // 设置浏览器后退按钮
+  goBack() {
+    this.location.back();
+  }
 
 }
 
-// 设置浏览器后退按钮
-goBack() {
-  this.location.back();
-}
 
-}
+

@@ -17,6 +17,7 @@ import { InMemoryDataService } from './in-memory-data-service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { HeroColorDirective } from './hero-color.directive';
 import { HeroDirectiveComponent } from './hero-directive/hero-directive.component';
+import { AddHeroComponent } from './add-hero/add-hero.component';
 @NgModule({
   declarations: [ // 组件、指令、管道
     AppComponent,
@@ -27,6 +28,7 @@ import { HeroDirectiveComponent } from './hero-directive/hero-directive.componen
     HeroColorDirective,
     HeroDetailComponent,
     DashboardComponent,
+    AddHeroComponent,
     HeroDirectiveComponent
   ],
   imports: [  // 导入公共的模块

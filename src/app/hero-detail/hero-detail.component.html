@@ -1,25 +1,20 @@
 <div *ngIf="hero">
-    <h2>{{ hero.name | uppercase }} Details</h2>
-    <div>
-        <span>id: </span>{{hero.id}}</div>
-    <div>
-        <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name" />
-    </label>
+    <h4>{{ hero.name | uppercase }} Details</h4>
+    <div class="form-group row col-12">
+        <label for="id" class="col-2 col-form-label">id</label>
+        <div class="col-6">
+            <input class="form-control" disabled type="text" value="{{hero.id}}" id="id">
+        </div>
     </div>
-    <button class="btn btn-primary" (click)='goBack()'>cancel</button>
-    <button class="btn btn-primary" (click)='save()'>保存</button>
-</div>
+    <div class="form-group row col-12">
+        <label for="name" class="col-2 col-form-label">name</label>
+        <div class="col-6">
+            <input [(ngModel)]="hero.name" placeholder="name" class="form-control" type="text" id="name" />
 
-<div>
-    <h2>新增 hero 模块</h2>
-    <label>Hero name:
-    <input #heroName />
-  </label>
-    <!-- (click) passes input value to add() and then clears the input -->
-    <button class="btn btn-primary" (click)="add(heroName.value);"> add </button>
-
-
-
-
-</div>
+        </div>
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary " (click)='save()'>update</button>
+        <button class="btn btn-default" (click)='goBack()'>cancel</button>
+        <button class="btn btn-info" routerLink='/addHero'>add</button>
+    </div>

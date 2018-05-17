@@ -1,5 +1,4 @@
-### 实现当前 hero 项目一些不明确的只是点都会记录在里面
-> 这是一个改良版本，才用Angular教程+Bootstrap的形式做一个简单的hero项目
+> 这是一个改良版本，采用Angular教程+Bootstrap的形式做一个简单的hero项目
 1. 每一个知识点都是一个component，在通过路由链接起来，我在学习的时候可以写一个component就OK
 2. 将写好的component，归类到module，directive，injectable，component
 3. 根据需要的功能查找需要的知识点：我需要更改颜色，也许需要directive

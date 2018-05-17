@@ -20,3 +20,16 @@
     background: #2a2a2a;
     color: white;
 }
+
+nav {
+    border: 1px solid #cdcdcd;
+}
+
+.main {
+    padding-left: 10px;
+}
+
+.main .content {
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+}

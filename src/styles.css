@@ -21,8 +21,14 @@
     color: white;
 }
 
-nav {
+nav.nav {
     border: 1px solid #cdcdcd;
+    padding: 10px;
+}
+
+nav a.active {
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
 }
 
 .main {

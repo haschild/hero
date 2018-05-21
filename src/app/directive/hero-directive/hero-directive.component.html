@@ -1,0 +1,29 @@
+<h4>
+    设置颜色</h4>
+<p [appHeroColor]="'yellow'">直接设置颜色</p>
+<div>
+    <label>
+      <input type="radio" name="colors" (click)="color='lightgreen'">Green</label>
+    <label>
+      <input type="radio" name="colors" (click)="color='yellow'">Yellow
+    </label>
+    <label>
+      <input type="radio" name="colors" (click)="color='cyan'">Cyan
+    </label>
+</div>
+<p [appHeroColor]="color" [defaultColor]="'violet'"> choose colors</p>
+<div class="line"></div>
+
+<p>写一个和 *ngIf 指令相反的功能</p>
+
+<p *appUnless='hasView'>显示或者不{{hasView}}</p>
+
+
+
+<button class="btn btn-default" (click)="goBack()">后退</button>
+
+<p>你可以根据属性名在绑定中出现的位置来判定是否要加 @Input。</p>
+<ul>
+    <li>当它出现在等号右侧的模板表达式中时，它属于模板所在的组件，不需要 @Input 装饰器</li>
+    <li>当它出现在等号左边的方括号（[ ]）中时，该属性属于其它组件或指令，它必须带有 @Input 装饰器。</li>
+</ul>

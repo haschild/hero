@@ -6,10 +6,12 @@ import { Input, TemplateRef, ViewContainerRef } from '@angular/core';
 })
 export class UnlessDirective {
   private hasView = false;
+  condition = false;
   constructor(
     private templateRef: TemplateRef<any>, // 获取模板的内容
     private viewContainer: ViewContainerRef   // 访问视图容器
   ) { }
+
 
   @Input()
   set appUnless(condition: boolean) {

@@ -39,3 +39,9 @@ nav a.active {
     padding: 10px;
     border: 1px solid #cdcdcd;
 }
+
+.line {
+    padding: 5px 1%;
+    width: 99%;
+    border-top: 1px solid #cdcdcd;
+}

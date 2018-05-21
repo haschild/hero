@@ -16,8 +16,10 @@
 
 <p>写一个和 *ngIf 指令相反的功能</p>
 
-<p *appUnless='hasView'>显示或者不{{hasView}}</p>
+<input type="radio" name="condition" (click)="condition='false'">false
+<input type="radio" name="condition" (click)="condition='true'">true
 
+<p *appUnless="condition">本来想用 radio 控制，结果没有办法。</p>
 
 
 <button class="btn btn-default" (click)="goBack()">后退</button>

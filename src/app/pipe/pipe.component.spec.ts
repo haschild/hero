@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeroDirectiveComponent } from './hero-directive.component';
+import { PipeComponent } from './pipe.component';
 
-describe('HeroDirectiveComponent', () => {
-  let component: HeroDirectiveComponent;
-  let fixture: ComponentFixture<HeroDirectiveComponent>;
+describe('PipeComponent', () => {
+  let component: PipeComponent;
+  let fixture: ComponentFixture<PipeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroDirectiveComponent ]
+      declarations: [ PipeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeroDirectiveComponent);
+    fixture = TestBed.createComponent(PipeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -7,7 +7,6 @@ import { Location } from '@angular/common';
 })
 export class HeroDirectiveComponent implements OnInit {
   constructor(private location: Location) { }
-
   ngOnInit() {
   }
 

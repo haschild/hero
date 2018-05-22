@@ -1,1 +1,23 @@
 <p>简单利用 angular 自带管道，{{ birthday | date:'yyyy-MM-dd' }}</p>
+<div class="line"></div>
+
+<p>通过参数控制管道值，管道是可以串联的共同作用 {{ birthday | date:format }}</p>
+<button class="btn btn-primary" (click)="toggleFormat()">Toggle Format</button>
+
+
+<div class="line"></div>
+
+
+<input [(ngModel)]="str">
+
+
+<p>增加字符串{{ '你好' | ReplaceStrPipe:'啊' }}</p>
+
+<p>增加字符串{{ '你好' | ReplaceStrPipe:str }}</p>
+
+<div class="line"></div>
+<label>
+<input type="radio" name="replaceStr" (click)="string='啊'">啊</label>
+<label>
+<input type="radio" name="replaceStr" (click)="string='呢'">呢</label>
+<p>增加字符串{{ '你好' | ReplaceStrPipe:string }}</p>

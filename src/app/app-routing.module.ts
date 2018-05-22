@@ -7,6 +7,7 @@ import { HeroDirectiveComponent } from './directive/hero-directive/hero-directiv
 import { MessageComponent } from './message/message.component';
 import { AddHeroComponent } from './add-hero/add-hero.component';
 import {PipeComponent} from './pipe/pipe.component';
+import { AnimationComponent } from './animation/animation.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'heroes', component: HeroesComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'message', component: MessageComponent },
   { path: 'addHero', component: AddHeroComponent},
   { path: 'pipe', component: PipeComponent },
+  {path: 'animation' , component: AnimationComponent},
   //   :id 是一个占位符，用来接收参数
   { path: 'detail/:id', component: HeroDetailComponent }
 

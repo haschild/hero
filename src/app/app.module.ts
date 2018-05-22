@@ -20,6 +20,8 @@ import { HeroDirectiveComponent } from './directive/hero-directive/hero-directiv
 import { AddHeroComponent } from './add-hero/add-hero.component';
 import { UnlessDirective } from './directive/unless.directive';
 import { PipeComponent } from './pipe/pipe.component';
+import { ReplaceStrPipe } from './pipe/oneselfPipe';
+import { AnimationComponent } from './animation/animation.component';
 @NgModule({
   declarations: [ // 组件、指令、管道
     AppComponent,
@@ -33,7 +35,9 @@ import { PipeComponent } from './pipe/pipe.component';
     AddHeroComponent,
     UnlessDirective,
     PipeComponent,
-    HeroDirectiveComponent
+    HeroDirectiveComponent,
+    AnimationComponent,
+    ReplaceStrPipe
   ],
   imports: [  // 导入公共的模块
     BrowserModule,

@@ -21,7 +21,14 @@ import { AddHeroComponent } from './add-hero/add-hero.component';
 import { UnlessDirective } from './directive/unless.directive';
 import { PipeComponent } from './pipe/pipe.component';
 import { ReplaceStrPipe } from './pipe/oneselfPipe';
+
+// animation module
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimationComponent } from './animation/animation.component';
+import { FormComponent } from './form/form.component';
+
+// from validator
+import { ForbiddenValidatorDirective } from './shared/form.validate.directive';
 @NgModule({
   declarations: [ // 组件、指令、管道
     AppComponent,
@@ -37,7 +44,10 @@ import { AnimationComponent } from './animation/animation.component';
     PipeComponent,
     HeroDirectiveComponent,
     AnimationComponent,
-    ReplaceStrPipe
+    FormComponent,
+    ReplaceStrPipe,
+    ForbiddenValidatorDirective
+
   ],
   imports: [  // 导入公共的模块
     BrowserModule,
@@ -49,7 +59,8 @@ import { AnimationComponent } from './animation/animation.component';
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+    BrowserAnimationsModule
   ],
   providers: [HeroService, MessageService, InMemoryDataService],  // 导入服务
   bootstrap: [AppComponent]  // 根路径的入口

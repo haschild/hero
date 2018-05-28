@@ -8,6 +8,9 @@ import { MessageComponent } from './message/message.component';
 import { AddHeroComponent } from './add-hero/add-hero.component';
 import {PipeComponent} from './pipe/pipe.component';
 import { AnimationComponent } from './animation/animation.component';
+import {FormComponent} from './form/form.component';
+
+import { FormsModule } from '@angular/forms';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'heroes', component: HeroesComponent },
@@ -17,6 +20,7 @@ const routes: Routes = [
   { path: 'addHero', component: AddHeroComponent},
   { path: 'pipe', component: PipeComponent },
   {path: 'animation' , component: AnimationComponent},
+  {path: 'form', component: FormComponent},
   //   :id 是一个占位符，用来接收参数
   { path: 'detail/:id', component: HeroDetailComponent }
 
@@ -24,7 +28,8 @@ const routes: Routes = [
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   exports: [
     RouterModule

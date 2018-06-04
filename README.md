@@ -195,6 +195,8 @@
 * 插值表达式和属性绑定都可以给 HTML 元素设置值。
 * 如果值是字符串两种方式都可以，如果值不是字符串，还是用属性绑定。
 
+#### TypeScript 类型定义（typing）
+> 很多 JavaScript 库，比如 jQuery、Jasmine 测试库和 Angular，会通过新的特性和语法来扩展 JavaScript 环境。 而 TypeScript 编译器并不能原生的识别它们。 当编译器不能识别时，它就会抛出一个错误。可以使用TypeScript 类型定义文件 —— .d.ts 文件 —— 来告诉编译器你要加载的库的类型定义。 这时候你就可以安装类型定义文件 eg: npm install @types/jquery --svae-dev
 
 
 
